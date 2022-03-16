@@ -1,23 +1,21 @@
 <template>
   <div id="app" class="nav">
     <img alt="Vue logo" src="./assets/logo.png">
-    <div id="nav">
-      <router-link to="/">Hello</router-link>
-      <router-link to="/todos">Tareas</router-link>
-    </div>
+    <nav class="navbar" id="nav">
+      <router-link class="nav-link" to="/">Hello</router-link>
+      <router-link class="nav-link" to="/todos">Tareas</router-link>
+      <router-link class="nav-link" to="/create">Crear</router-link>
+    </nav>
 
-    <router-view/>
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-
-
-
 export default {
   name: 'App',
-
 
 }
 </script>
